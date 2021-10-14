@@ -1,0 +1,1 @@
+# X86_64_MinKNOW_GUI_4.3.26_install_script
