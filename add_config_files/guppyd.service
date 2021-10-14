@@ -1,0 +1,24 @@
+[Unit]
+Description=Service to manage the guppy basecall server.
+Documentation=https://community.nanoporetech.com/protocols/Guppy-protocol/v/GPB_2003_v1_revQ_14Dec2018
+
+[Service]
+ExecStart=/applications/ont-guppy_5.0.14_linux64_GPU/bin/guppy_basecall_server --log_path /var/log/guppy --config dna_r9.4.1_450bps_fast.cfg --num_callers 1 --cpu_threads_per_caller 2 --port 5555 --ipc_threads 3 -x cuda:all
+Restart=always
+User=root
+MemoryLimit=8G
+MemoryHigh=8G
+CPUQuota=200%
+
+[Install]
+Alias=guppyd.service
+WantedBy=multi-user.target
+Restart=always
+User=root
+MemoryLimit=8G
+MemoryHigh=8G
+CPUQuota=200%
+
+[Install]
+Alias=guppyd.service
+WantedBy=multi-user.target
