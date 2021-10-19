@@ -17,6 +17,7 @@ vncpasswd
 
 #copy working xstartup to .vnc directory
 cp add_config_files/xstartup ~/.vnc/
+chmod +x ~/.vnc/xstartup
 
 #create script folder for starting vnc server:
 mkdir ~/scripts/
