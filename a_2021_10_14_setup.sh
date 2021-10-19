@@ -24,7 +24,6 @@ cp  add_config_files/vnc_start.sh ~/scripts
 chmod +x ~/scripts/vnc_start.sh
 
 #installation of nvidia driver using nvidia mirror
-#echo "hello world" >> my_file.txt
 
 wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub | sudo apt-key add -
 
@@ -40,4 +39,5 @@ sudo apt install nvidia-driver-470 cuda
 
 #To disable the GUI for login - otherwise the loginscreen will be running on the NVIDIA GPU
 sudo systemctl set-default multi-user.target
+echo "reboot system now"
 sudo reboot
