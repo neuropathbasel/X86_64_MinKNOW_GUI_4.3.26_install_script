@@ -9,7 +9,7 @@ sudo apt-get upgrade
 
 #synaptic gnome disk, open ssh, vnc4server
 #logged in as user
-sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies
+sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser
 
 #setup vnc - dialogue box should be requested
 echo "please enter vnc password for user minknow"
