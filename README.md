@@ -1,16 +1,8 @@
 # X86_64_MinKNOW_GUI_4.3.26_install_script #
 
-Author: Claus Hultschig, IfP
+Scripted installation of Minknow control software version 4.3.26, nvidia GPU drivers and CUDA for GPU based base calling and GPU based sequence analysis such as methylation calling. 
 
-Date: 2021 10 21
-
-Version:02
-
-The following series of steps was found to work with more than three different PCs of different vendors. 
-
-To minimize confusion: Please have only one SSD/HDD conneted in your PC.
-
-Please note: we will be unable to provide any support if you deviate from below steps.
+The following series of steps was found to work with more than three different PCs of different vendors.
 
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
