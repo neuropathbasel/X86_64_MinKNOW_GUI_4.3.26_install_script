@@ -9,13 +9,6 @@ The following series of steps was found to work with more than three different P
 * PC equipped with GPU (>= 8GB RAM) and one SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
 * Ubuntu 18.04 installed on the above mentioned PC with only one user called minknow set up.
 * Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.  
-* Relevant config files and scripts  in MinKNOW_4.3.26_20210929_x86_64_1804 directory (will be downloaded using the git clone command):
-  * a_2021_10_14_setup.sh
-  * b_2021_10_13_minknow_guppy_install_deb.sh
-  * add_config_files/guppyd.service
-  * add_config_files/vnc_start.sh
-  * add_config_files/xstartup
-  * ont-guppy_5.0.14_linux64.tar.gz (open source, will be downloaded in the second script)
 * Relevant debian packages (have to be requested form ONT)
   * minion-nc_21.06.10-1~bionic_all.deb
   * ont-bream4-minion_6.2.6-1~bionic_all.deb
