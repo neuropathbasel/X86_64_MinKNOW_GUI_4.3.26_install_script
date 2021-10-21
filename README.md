@@ -46,10 +46,6 @@ Run the following commands
 
 `cd X86_64_MinKNOW_GUI_4.3.26_install_script`
 
-## first setup script
-
-run in the X86_64_MinKNOW_GUI_4.3.26_install_script directory:
-
 `./a_2021_10_14_setup.sh`
 
 Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minkow in the respective dialogues.
