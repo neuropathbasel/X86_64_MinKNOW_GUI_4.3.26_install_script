@@ -105,4 +105,4 @@ You should see something similar to the following image
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
-The setup should be now ready for sequencing.
+Your setup should be now ready for sequencing.
