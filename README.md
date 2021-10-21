@@ -8,7 +8,8 @@ The following series of steps was found to work with more than three different P
 * Knowledge of Linux command line and VNC.
 * PC equipped with GPU (>= 8GB RAM) and one SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
 * Ubuntu 18.04 installed on the above mentioned PC with only one user called minknow set up.
-* Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.  
+* Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.
+* second pPC for VNC access to the control PC.  
 * Relevant debian packages (have to be requested form ONT)
   * minion-nc_21.06.10-1~bionic_all.deb
   * ont-bream4-minion_6.2.6-1~bionic_all.deb
