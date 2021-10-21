@@ -2,7 +2,7 @@
 
 Scripted installation of Minknow control software version 4.3.26, nvidia GPU drivers and CUDA for GPU based base calling and GPU based sequence analysis such as methylation calling. 
 
-The following series of steps was found to work with more than three different PCs of different vendors.
+The following series of steps was found to work with more than three different PCs of different vendors. On a Zotac Zbox the complete installation (including installation of xUbuntu) was possible in less than 25 minutes.
 
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
