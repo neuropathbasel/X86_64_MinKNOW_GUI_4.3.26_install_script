@@ -54,6 +54,10 @@ Upon completion, the system will reboot.
 
 Make sure there is *no* Minion unit connected to the PC. A connected Minion device can impair system startup.
 
+# After 2nd reboot
+
+Only commanline login is shown on the screen attached to the control PC. 
+
 # start and use vnc server
 ## ssh login to the control PC
 
