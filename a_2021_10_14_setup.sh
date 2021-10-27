@@ -9,7 +9,10 @@ sudo apt-get upgrade
 
 #synaptic gnome disk, open ssh, vnc4server
 #logged in as user
-sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser
+sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree
+
+#set chromium as default browser
+sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
 
 #setup vnc - dialogue box should be requested
 echo "please enter vnc password for user minknow"
@@ -40,5 +43,11 @@ sudo apt install nvidia-driver-470 cuda
 
 #To disable the GUI for login - otherwise the loginscreen will be running on the NVIDIA GPU
 sudo systemctl set-default multi-user.target
-echo "reboot system now"
-sudo reboot
+#echo "reboot system now"
+#dialogue before reboot to find possible errors that might occur
+read -p "reboot now?" -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    sudo reboot
+fi
