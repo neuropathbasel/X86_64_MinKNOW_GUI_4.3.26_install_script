@@ -51,7 +51,15 @@ sudo ln -s /data /var/lib/minknow/data
 
 #sudo systemctl daemon-reload
 #sudo service guppyd start
-#nvidia-smi
+nvidia-smi
+
+#set chromium as default browser
+#sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
+
+xdg-settings set default-web-browser chromium-browser.desktop
+
+#test if nvidia-smi is still working
+nvidia-smi
 
 #dialogue before reboot to find possible errors that might occur
 read -p "reboot now?" -n 1 -r
