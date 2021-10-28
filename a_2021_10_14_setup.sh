@@ -9,10 +9,9 @@ sudo apt-get upgrade
 
 #synaptic gnome disk, open ssh, vnc4server
 #logged in as user
-sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree
+sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree gnome-system-monitor
 
-#set chromium as default browser
-sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
+
 
 #setup vnc - dialogue box should be requested
 echo "please enter vnc password for user minknow"
@@ -40,6 +39,11 @@ sudo apt update
 sudo apt upgrade
 #should show
 sudo apt install nvidia-driver-470 cuda
+
+
+#set chromium as default browser
+sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
+
 
 #To disable the GUI for login - otherwise the loginscreen will be running on the NVIDIA GPU
 sudo systemctl set-default multi-user.target

@@ -52,4 +52,11 @@ sudo ln -s /data /var/lib/minknow/data
 #sudo systemctl daemon-reload
 #sudo service guppyd start
 #nvidia-smi
-sudo reboot
+
+#dialogue before reboot to find possible errors that might occur
+read -p "reboot now?" -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    sudo reboot
+fi
