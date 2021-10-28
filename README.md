@@ -1,6 +1,6 @@
 # X86_64_MinKNOW_GUI_4.3.26_install_script #
 
-Scripted installation of Minknow control software version 4.3.26, nvidia GPU drivers and CUDA for GPU based base calling and GPU based sequence analysis such as methylation calling. 
+Scripted installation of Minknow control software version 4.3.26, nvidia GPU drivers and CUDA for GPU based base calling and GPU based sequence analysis such as methylation calling.
 
 The following series of steps was found to work with more than three different PCs of different vendors. On a Zotac Zbox the complete installation (including installation of xUbuntu) was possible in less than 25 minutes.
 
@@ -51,13 +51,15 @@ Run the following commands
 
 Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minkow in the respective dialogues.
 
-Upon completion, the system will reboot.
+Please note:  For unclear reasons firefox crashes during the system updates. Reasons so far unclear
+
+Upon completion, you be asked for verification of a reboot.
 
 Make sure there is *no* Minion unit connected to the PC. A connected Minion device can impair system startup.
 
 # After 2nd reboot
 
-Only commanline login is shown on the screen attached to the control PC. 
+Only command line login is shown on the screen attached to the control PC.
 
 # start and use vnc server
 ## ssh login to the control PC
@@ -89,6 +91,7 @@ Verify installation of additional packages.
 If necessary, exit minkow service status dialogue by pressing “q”.
 
 System will reboot.
+Please ensure that nor USB stick or Minion unit is attached to the control PC.
 
 # After 3rd reboot
 activate and use vnc server (see above)
