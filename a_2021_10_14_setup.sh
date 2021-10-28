@@ -44,7 +44,7 @@ sudo apt install nvidia-driver-470 cuda
 #set chromium as default browser
 #sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
 
-sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
+xdg-settings set default-web-browser chromium-browser.desktop
 
 #To disable the GUI for login - otherwise the loginscreen will be running on the NVIDIA GPU
 sudo systemctl set-default multi-user.target
