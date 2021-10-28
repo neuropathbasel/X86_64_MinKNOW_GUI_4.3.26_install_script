@@ -38,8 +38,8 @@ echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86
 sudo apt update
 sudo apt upgrade
 #should show
-sudo apt install nvidia-driver-470 cuda
-
+#sudo apt install nvidia-driver-470 cuda
+sudo apt install cuda
 
 #set chromium as default browser
 #sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
