@@ -49,6 +49,15 @@ sudo chown minknow /data
 sudo mv /var/lib/minknow/data /var/lib/minknow/data_old
 sudo ln -s /data /var/lib/minknow/data
 
+#create directories needed for nanodip
+sudo mkdir /data/nanodip_reports
+sudo chown minknow /data/nanodip_reports
+
+sudo mkdir /data/nanodip_output
+sudo chown minknow /data/nanodip_output
+
+
+
 #sudo systemctl daemon-reload
 #sudo service guppyd start
 nvidia-smi
