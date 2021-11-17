@@ -83,12 +83,12 @@ The desktop of the control PC should be shown.
 
 ## copy debian files defined above to /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
 
-in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run
+In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run
 
-`./b_2021_10_13_minknow_guppy_install_deb.sh`
+`./d_minknow_guppy_install_deb_sneaker.sh`
 
 Verify installation of additional packages.
-If necessary, exit minkow service status dialogue by pressing “q”.
+If necessary, exit minknow service status dialogue by pressing “q”.
 
 System will reboot.
 Please ensure that nor USB stick or Minion unit is attached to the control PC.
