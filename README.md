@@ -7,7 +7,7 @@ The following series of steps was found to work with more than three different P
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
 * PC equipped with GPU (>= 8GB RAM) and *one* SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
-* Ubuntu 18.04 installed on the above mentioned PC with only one user called minknow set up.
+* Ubuntu 18.04 installed on the above mentioned PC with only *one user* called *minknow*.
 * Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.
 * *second* computer for VNC access to the control PC.  
 * Relevant debian packages (have to be requested form ONT)
@@ -21,14 +21,14 @@ The following series of steps was found to work with more than three different P
   * ont-vbz-hdf-plugin_1.0.0-1~bionic_amd64.deb
   * ont-jwt-auth_0.28-1~bionic_amd64.deb
 
-For license reasons we must not provide any of the debian files listed above. Please request them from ONT directly via the support chat in the community forum (https://community.nanoporetech.com/).
+For license reasons we must not provide any of the debian files listed above. Please request them from ONT directly via the support chat in the community forum (https://community.nanoporetech.com/) before starting the steps detailed below.
 
 # After installation of xUbuntu 18.04
 ## login
 Do *not* update to xUbuntu 20.04 LTS (or any other more recent distribution)
 
 ## Installation of GPU driver and CUDA
-*Please note:* After running the a_2021_10_14_setup.sh script the local screen will no longer show a GUI, but only a login prompt. You can, however, access a GUI of the machine via VNC. This is needed to prevent any resource conflict with GPU usage for calculation (e.g. during basecalling) and display of a GUI(login screen).
+*Please note:* After running the a_guppy_minknow_nanodip_dependencies.sh script the local screen will no longer show a graphical user interface (GUI), but only a login prompt. You can, however, access a GUI of the machine via Virtual Network Computing (VNC). This is needed to prevent any resource conflict with GPU usage for calculation (e.g. during basecalling) and display of a GUI. suitable packages will be downloaded and installed during this script.
 
 The PC will automatically reboot after the execution of script  a_2021_10_14_setup.sh
 
@@ -47,7 +47,7 @@ Run the following commands
 
 `cd X86_64_MinKNOW_GUI_4.3.26_install_script`
 
-`./a_2021_10_14_setup.sh`
+`./a_guppy_minknow_nanodip_dependencies.sh`
 
 Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minknow in the respective dialogues.
 
@@ -98,7 +98,7 @@ activate and use vnc server (see above)
 
 ## Minknow UI
 * Ensure no Minion Unit is connected to the control PC.
-* Start Minknow UI from the start menu (upper left corner with little mouse head).
+* Start Minknow UI from the start menu (upper left corner with little mouse head; enter 'minknow').
 * Login with your Nanopore account or as a guest. In the next dialogue box “update available”, *skip this version*. If there is no response to any mouse click and there is a dialogue for tutorials, choose in the upper right corner: ship all tutorials by clicking three vertical dots and then skip tutorials (or something similar).
 
 You should see something similar to the following image
