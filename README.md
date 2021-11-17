@@ -6,10 +6,10 @@ The following series of steps was found to work with more than three different P
 
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
-* PC equipped with GPU (>= 8GB RAM) and one SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
+* PC equipped with GPU (>= 8GB RAM) and *one* SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
 * Ubuntu 18.04 installed on the above mentioned PC with only one user called minknow set up.
 * Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.
-* second pPC for VNC access to the control PC.  
+* *second* computer for VNC access to the control PC.  
 * Relevant debian packages (have to be requested form ONT)
   * minion-nc_21.06.10-1~bionic_all.deb
   * ont-bream4-minion_6.2.6-1~bionic_all.deb
@@ -21,7 +21,7 @@ The following series of steps was found to work with more than three different P
   * ont-vbz-hdf-plugin_1.0.0-1~bionic_amd64.deb
   * ont-jwt-auth_0.28-1~bionic_amd64.deb
 
-For licence reasons we must not provide any of the deb files. Please request them from ONT directly yourself via the support chat in the community forum (https://community.nanoporetech.com/)
+For license reasons we must not provide any of the debian files listed above. Please request them from ONT directly via the support chat in the community forum (https://community.nanoporetech.com/).
 
 # After installation of xUbuntu 18.04
 ## login
@@ -49,22 +49,22 @@ Run the following commands
 
 `./a_2021_10_14_setup.sh`
 
-Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minkow in the respective dialogues.
+Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minknow in the respective dialogues.
 
-Please note:  For unclear reasons firefox crashes during the system updates. Reasons so far unclear
+Please note:  For unclear reasons firefox crashes during the system updates. This does (so far) not impair this procedure.
 
 Upon completion, you be asked for verification of a reboot.
 
 Make sure there is *no* Minion unit connected to the PC. A connected Minion device can impair system startup.
 
-# After 2nd reboot
+# After reboot
 
 Only command line login is shown on the screen attached to the control PC.
 
 # start and use vnc server
 ## ssh login to the control PC
 
-In the example code below the new control PC has the IP adddress 192.168.1.27
+In the example code below the new control PC has the IP address 192.168.1.27
 
 On your second local machine enter in the terminal:
 

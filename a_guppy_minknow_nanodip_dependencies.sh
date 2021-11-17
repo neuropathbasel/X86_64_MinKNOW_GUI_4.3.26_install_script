@@ -4,12 +4,12 @@
 #A GUI for this machine will be only be available via VNC
 #to be executed from the directory the
 #get system to most rescent state
-sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get -y update
+sudo apt-get -y upgrade
 
 #synaptic gnome disk, open ssh, vnc4server
 #logged in as user
-sudo apt-get install synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree gnome-system-monitor
+sudo apt-get install -y synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree gnome-system-monitor baobab
 
 
 
@@ -35,11 +35,11 @@ echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86
 
 #download relevant data from NVIDIA repository
 
-sudo apt update
-sudo apt upgrade
+sudo apt update -y
+sudo apt upgrade -y
 #should show
 #sudo apt install nvidia-driver-470 cuda
-sudo apt install cuda
+sudo apt install cuda -y
 
 #set chromium as default browser
 #sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
@@ -50,7 +50,7 @@ sudo apt install cuda
 sudo systemctl set-default multi-user.target
 #echo "reboot system now"
 #dialogue before reboot to find possible errors that might occur
-read -p "reboot now?" -n 1 -r
+read -p "please enter y for immidiate reboot" -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
