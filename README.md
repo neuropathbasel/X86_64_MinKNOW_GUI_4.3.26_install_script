@@ -100,6 +100,7 @@ activate and use vnc server (see above)
 * Ensure no Minion Unit is connected to the control PC.
 * Start Minknow UI from the start menu (upper left corner with little mouse head; enter 'minknow').
 * Login with your Nanopore account or as a guest. In the next dialogue box “update available”, *skip this version*. If there is no response to any mouse click and there is a dialogue for tutorials, choose in the upper right corner: ship all tutorials by clicking three vertical dots and then skip tutorials (or something similar).
+* For the time being, please, *never ever* choose update of minknow. Any update will prevent all scripts developed for the nanodip pipeline from proper execution and you will not obtain any useful results.
 
 You should see something similar to the following image
 
@@ -110,3 +111,14 @@ You should see something similar to the following image
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
 Your setup should be now ready for sequencing.
+
+Chromium should be your default browser.
+
+Please use Chromium to obtain reference data (app 80 GB) from:
+https://sites.google.com/view/nanodipreferencedata/home
+
+After unpacking please move them to
+
+/applications/reference_data/
+
+Please mantain the data structure.
