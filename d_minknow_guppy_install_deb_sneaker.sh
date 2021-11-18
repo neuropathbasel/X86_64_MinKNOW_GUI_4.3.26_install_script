@@ -147,7 +147,7 @@ mkdir -p raw_seq_files
 
 #scp jhench@meqneuropat01.uhbs.ch:/mnt/8TBraid03/imagesets/Nanopore_RAW/meqneuropat17_20210311_1152_FAP12445_MN26891_sequencing_run_B2021_10463_20210311_BC06_cc9c5597.fast5 /data/raw_seq_files/
 
-mkdir /home/minknow/scripts/TOML
+mkdir -p /home/minknow/scripts/TOML
 
 #sudo chown minknow /home/minknow/scripts/TOML
 
