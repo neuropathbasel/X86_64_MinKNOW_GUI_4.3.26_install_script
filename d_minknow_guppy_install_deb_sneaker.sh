@@ -42,7 +42,7 @@ sudo dpkg -i minion-nc_21.06.10-1~bionic_all.deb
 #nvidia-smi
 
 #GUPPy in GPU mode - extracted form local tar.gz archive
-sudo mkdir /applications
+sudo mkdir -p /applications
 sudo chmod a=rwx /applications/
 #cd ~/Downloads/MinKNOW_4.3.26_20210929_x86_64_1804
 
@@ -65,16 +65,16 @@ sudo rm -rf /etc/systemd/system/guppyd.service
 sudo rm -rf /etc/systemd/system/guppyd.service.d
 sudo ln -s /lib/systemd/system/guppyd.service /etc/systemd/system/
 
-sudo mkdir /data
+sudo mkdir -p /data
 sudo chown minknow /data
 sudo mv /var/lib/minknow/data /var/lib/minknow/data_old
 sudo ln -s /data /var/lib/minknow/data
 
 #create directories needed for nanodip
-sudo mkdir /data/nanodip_reports
+sudo mkdir -p /data/nanodip_reports
 sudo chown minknow /data/nanodip_reports
 
-sudo mkdir /data/nanodip_output
+sudo mkdir -p /data/nanodip_output
 sudo chown minknow /data/nanodip_output
 
 #echo $PW_minknow|sudo systemctl daemon-reload
@@ -141,13 +141,13 @@ ln -s ~/scripts/activate_nanodip_jupyter_notebook.sh ~/Desktop/
 #fi
 
 #scirpts and files for activating / dectivating playbackmode with known reference for GBM
-#cd /data/
-#mkdir -p raw_seq_files
+cd /data/
+mkdir -p raw_seq_files
 #sudo chown minknow /data/raw_seq_files
 
 #scp jhench@meqneuropat01.uhbs.ch:/mnt/8TBraid03/imagesets/Nanopore_RAW/meqneuropat17_20210311_1152_FAP12445_MN26891_sequencing_run_B2021_10463_20210311_BC06_cc9c5597.fast5 /data/raw_seq_files/
 
-#mkdir /home/minknow/scripts/TOML
+mkdir /home/minknow/scripts/TOML
 
 #sudo chown minknow /home/minknow/scripts/TOML
 
