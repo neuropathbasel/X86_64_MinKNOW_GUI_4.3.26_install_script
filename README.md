@@ -4,6 +4,9 @@ Scripted installation of Minknow control software version 4.3.26, nvidia GPU dri
 
 The following series of steps was found to work with more than three different PCs of different vendors. On a Zotac Zbox the complete installation (including installation of xUbuntu) was possible in less than 25 minutes.
 
+##this is work in progress
+before getting started, please refresh this page to work with the latest version.
+
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
 * PC equipped with GPU (>= 8GB RAM) and *one* SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
@@ -85,7 +88,7 @@ The desktop of the control PC should be shown.
 
 In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run
 
-`./d_minknow_guppy_install_deb_sneaker.sh`
+`.b_minknow_guppy_install_deb.sh`
 
 Verify installation of additional packages.
 If necessary, exit minknow service status dialogue by pressing “q”.
@@ -102,7 +105,7 @@ activate and use vnc server (see above)
 * Login with your Nanopore account or as a guest. In the next dialogue box “update available”, *skip this version*. If there is no response to any mouse click and there is a dialogue for tutorials, choose in the upper right corner: ship all tutorials by clicking three vertical dots and then skip tutorials (or something similar).
 * For the time being, please, *never ever* choose update of minknow. Any update will prevent all scripts developed for the nanodip pipeline from proper execution and you will not obtain any useful results.
 
-You should see something similar to the following image
+After starting the Minknow User Interface, you should see something similar to the following image
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_start_screen.png)
 
@@ -112,13 +115,28 @@ You should see something similar to the following image
 
 Your setup should be now ready for sequencing.
 
+##Reference data:
+NanoDip will not work without reference data.
 Chromium should be your default browser.
 
 Please use Chromium to obtain reference data (app 80 GB) from:
 https://sites.google.com/view/nanodipreferencedata/home
+Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
-After unpacking please move them to
+Download the following google sheet files as Excel xlsx to the /home/minknow/Downloads.
+keep the proposed name.
 
-/applications/reference_data/
+https://docs.google.com/spreadsheets/d/1svy9s3noE8-rBxri_mU7OOWEw7MTrNDw/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
+https://docs.google.com/spreadsheets/d/1qSNZKaQxYbvBvGg1mZgRas7IqmmGNxBI/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
+https://docs.google.com/spreadsheets/d/1UcPHsbph9RoWKnGXSBPhFG35PEVbYscK/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
+https://docs.google.com/spreadsheets/d/1A50bFWUBPBgO00AHYYfaE8H3iTZrGKNo/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
 
-Please mantain the data structure.
+Do *NOT* proceed before you have the following files in you Downlaods directory:
+* GSE90496_IfP01.xlsx
+* GSE90496.xlsx
+* AllIDATv2_20210804.xlsx
+* AllIDATv2_20210804.xlsx
+
+
+After completion, run
+/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/c_reference_data.sh
