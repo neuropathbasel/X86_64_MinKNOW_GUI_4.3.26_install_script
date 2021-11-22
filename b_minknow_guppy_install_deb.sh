@@ -30,17 +30,25 @@ cd /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script
 
 sudo apt-get -y install -f
 sudo dpkg -i ont-jwt-auth_0.28-1~bionic_amd64.deb
+sudo apt-get -y install -f
 sudo dpkg -i minknow-core-minion-nc_4.3.12-bionic_amd64.deb
+sudo apt-get -y install -f
 sudo usermod -aG sudo minknow
-sudo usermod -aG user minknow
+#sudo usermod -aG user minknow
 sudo dpkg -i ont-bream4-minion_6.2.6-1~bionic_all.deb
+sudo apt-get -y install -f
 sudo dpkg -i ont-configuration-customer-minion_4.3.11-1~bionic_all.deb
+sudo apt-get -y install -f
 sudo dpkg -i ont-kingfisher-ui-minion_4.3.26-1~bionic_all.deb
+sudo apt-get -y install -f
 sudo dpkg -i ont-vbz-hdf-plugin_1.0.0-1~bionic_amd64.deb
+sudo apt-get -y install -f
 sudo dpkg -i ont-guppy-cpu-for-minion_5.0.13-1~bionic_amd64.deb
 sudo apt-get -y install -f
 sudo dpkg -i ont-guppyd-for-minion_5.0.13-1~bionic_all.deb
+sudo apt-get -y install -f
 sudo dpkg -i minion-nc_21.06.10-1~bionic_all.deb
+sudo apt-get -y install -f
 #sudo service minknow status
 #sudo service minknow start
 #sudo service minknow status
@@ -82,8 +90,8 @@ sudo chown minknow /data/nanodip_reports
 sudo mkdir -p /data/nanodip_output
 sudo chown minknow /data/nanodip_output
 
-#echo $PW_minknow|sudo systemctl daemon-reload
-#echo $PW_minknow|sudo service guppyd start
+echo $PW_minknow|sudo systemctl daemon-reload
+echo $PW_minknow|sudo service guppyd start
 #nvidia-smi
 
 
