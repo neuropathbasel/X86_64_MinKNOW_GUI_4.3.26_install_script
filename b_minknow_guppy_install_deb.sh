@@ -92,8 +92,23 @@ sudo chown minknow /data/nanodip_output
 
 echo $PW_minknow|sudo systemctl daemon-reload
 echo $PW_minknow|sudo service guppyd start
-#nvidia-smi
-
 
 #test if nvidia-smi is still working
 nvidia-smi
+
+echo "please remove any USB dvice from the PC"
+echo    # (optional) move to a new line
+
+#dialogue for termination of scipt
+while true; do
+    read -p "please press y after removal of all USB storage devices, n for termination:" yn
+    echo ""
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) echo "terminating scipt"; exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+#restart
+sudo service minknow restart

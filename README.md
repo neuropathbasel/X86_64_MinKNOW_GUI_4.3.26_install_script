@@ -93,8 +93,27 @@ In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directo
 Verify installation of additional packages.
 If necessary, exit minknow service status dialogue by pressing “q”.
 
-System will reboot.
-Please ensure that nor USB stick or Minion unit is attached to the control PC.
+After the completion of this scipt you should see something like the following:
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 495.44       Driver Version: 495.44       CUDA Version: 11.5     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA GeForce ...  Off  | 00000000:01:00.0 Off |                  N/A |
+|  0%   51C    P8    12W / 170W |   3929MiB / 12053MiB |      0%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      4644      C   ...bin/guppy_basecall_server     3927MiB |
++-----------------------------------------------------------------------------+
+
 
 # After 3rd reboot
 activate and use vnc server (see above)
