@@ -11,7 +11,8 @@ sudo apt-get -y upgrade
 #logged in as user
 sudo apt-get install -y synaptic gnome-disk-utility openssh-server build-essential vnc4server xfce4 xfce4-goodies chromium-browser tree gnome-system-monitor baobab
 
-
+#set chromium as default browser
+xdg-settings set default-web-browser chromium-browser.desktop
 
 #setup vnc - dialogue box should be requested
 echo "please enter vnc password for user minknow"

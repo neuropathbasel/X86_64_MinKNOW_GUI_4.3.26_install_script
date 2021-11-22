@@ -45,6 +45,9 @@ sim_eq="simulation="
 sim_line="$sim_eq$RawPath"
 sed '/^translocation_speed_max.*/a '$sim_line'' $TOML > $pbTOML
 
+#copy scripts for activating / deactivating plyback to ~/scripts
+cp /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/playback_true.sh /home/minknow/scripts/
+cp /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/playback_FALSE.sh /home/minknow/scripts/
 
 #move all bin file with beta values to /applications/reference_data/betaEPIC450Kmix_bin folder
 sudo mv /home/minknow/Downloads/betaEPIC450Kmix_bin/ /applications/reference_data/
@@ -58,6 +61,8 @@ mv GSE90496_IfP01.xlsx /applications/reference_data/reference_annotations
 mv GSE90496.xlsx /applications/reference_data/reference_annotations
 mv AllIDATv2_20210804.xlsx /applications/reference_data/reference_annotations
 mv 20210721_EpiDiP_anno.xlsx /applications/reference_data/reference_annotations
+
+chmod a=r /applications/reference_data/reference_annotations/*
 
 
 #wget https://docs.google.com/spreadsheets/d/1svy9s3noE8-rBxri_mU7OOWEw7MTrNDw/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
