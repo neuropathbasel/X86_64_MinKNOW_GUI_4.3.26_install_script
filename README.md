@@ -95,7 +95,7 @@ If necessary, exit minknow service status dialogue by pressing “q”.
 
 After the completion of this scipt you should see something like the following:
 
-
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/cuda_on_guppy.png)
 
 You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU.
 
