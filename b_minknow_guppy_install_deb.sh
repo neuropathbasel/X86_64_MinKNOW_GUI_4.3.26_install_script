@@ -90,11 +90,8 @@ sudo chown minknow /data/nanodip_reports
 sudo mkdir -p /data/nanodip_output
 sudo chown minknow /data/nanodip_output
 
-#echo $PW_minknow|sudo systemctl daemon-reload
-#echo $PW_minknow|sudo service guppyd start
-
-#test if guppy is running in GPU mode
-nvidia-smi
+echo $PW_minknow|sudo systemctl daemon-reload
+echo $PW_minknow|sudo service guppyd start
 
 echo "please remove any USB dvice from the PC"
 echo    # (optional) move to a new line
@@ -112,3 +109,6 @@ done
 
 #restart
 sudo service minknow restart
+
+#test if guppy is running in GPU mode
+nvidia-smi

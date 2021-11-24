@@ -2,7 +2,7 @@
 
 Scripted installation of Minknow control software version 4.3.26, nvidia GPU drivers and CUDA for GPU based base calling and GPU based sequence analysis such as methylation calling.
 
-The following series of steps was found to work with more than three different PCs of different vendors. On a Zotac Zbox the complete installation (including installation of xUbuntu) was possible in less than 25 minutes.
+The following series of steps was found to work with more than three different PCs of different vendors.
 
 ##this is work in progress
 before getting started, please refresh this page to work with the latest version.
@@ -50,7 +50,7 @@ Run the following commands
 
 `cd X86_64_MinKNOW_GUI_4.3.26_install_script`
 
-`./a_guppy_minknow_nanodip_dependencies.sh`
+`./a_gpu_cuda.sh`
 
 Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minknow in the respective dialogues.
 
@@ -114,13 +114,13 @@ After the completion of this scipt you should see something like the following:
 |    0   N/A  N/A      4644      C   ...bin/guppy_basecall_server     3927MiB |
 +-----------------------------------------------------------------------------+
 
-You have to see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of memory on the GPU.
+You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU.
 
 ## Minknow UI
 * Ensure no Minion Unit is connected to the control PC.
 * Start Minknow UI from the start menu (upper left corner with little mouse head; enter 'minknow').
 * Login with your Nanopore account or as a guest. In the next dialogue box “update available”, *skip this version*. If there is no response to any mouse click and there is a dialogue for tutorials, choose in the upper right corner: ship all tutorials by clicking three vertical dots and then skip tutorials (or something similar).
-* For the time being, please, *never ever* choose update of minknow. Any update will prevent all scripts developed for the nanodip pipeline from proper execution and you will not obtain any useful results.
+* For the time being, please, *never ever* choose update of minknow. Any update will prevent all scripts developed for our nanodip pipeline from proper execution and you will not obtain any useful results.
 
 After starting the Minknow User Interface, you should see something similar to the following image
 
@@ -138,23 +138,12 @@ NanoDip will not work without reference data.
 Chromium should be your default browser.
 
 Please use Chromium to obtain reference data (app 80 GB) from:
-https://sites.google.com/view/nanodipreferencedata/home
+https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
-Download the following google sheet files as Excel xlsx to the /home/minknow/Downloads.
-keep the proposed name.
+#there are chances you will have to resume the file transfers
 
-https://docs.google.com/spreadsheets/d/1svy9s3noE8-rBxri_mU7OOWEw7MTrNDw/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
-https://docs.google.com/spreadsheets/d/1qSNZKaQxYbvBvGg1mZgRas7IqmmGNxBI/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
-https://docs.google.com/spreadsheets/d/1UcPHsbph9RoWKnGXSBPhFG35PEVbYscK/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
-https://docs.google.com/spreadsheets/d/1A50bFWUBPBgO00AHYYfaE8H3iTZrGKNo/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
-
-Do *NOT* proceed before you have the following files in you Downloads directory:
-* GSE90496_IfP01.xlsx
-* GSE90496.xlsx
-* AllIDATv2_20210804.xlsx
-* AllIDATv2_20210804.xlsx
-
+Do *NOT* proceed before you have completed the download of all 28 zip files.
 
 After completion, run
-/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/c_reference_data.sh
+/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh
