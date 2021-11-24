@@ -2,7 +2,12 @@
 #this script is for moving reference data to /applications/reference_data/betaEPIC450Kmix_bin folder
 #
 #raw sequening example files to
-echo "please continue this script only after completing the download of the reference data. Incomplete downloads will result in errors"
+echo "please continue this script only after completing the download of the reference data."
+echo "please downlaod form :"
+echo "https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing"
+echo "Incomplete downloads will result in errors"
+echo "In cae you did modify the Please copy all reference and xlsx file to ~/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script"
+echo "In cae you did modify thedowlaod folder in you browser, Please copy all reference and xlsx file to ~/Downloads/"
 
 echo    # (optional) move to a new line
 
@@ -18,10 +23,10 @@ while true; do
 done
 
 echo "continuation of script"
-cd /home/minknow/Downloads
+cd /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script
 
 #unpacking of the zip archives of the reference data
-#existing files are overwritten in case some archives have been downlaoded more than once
+#existing files are overwritten in case some archives have been downloaded more than once
 for z in `ls *.zip`; do unzip -o $z; done
 
 #move raw fast file to /data/raw_seq_files
@@ -45,7 +50,7 @@ sim_eq="simulation="
 sim_line="$sim_eq$RawPath"
 sed '/^translocation_speed_max.*/a '$sim_line'' $TOML > $pbTOML
 
-#copy scripts for activating / deactivating plyback to ~/scripts
+#copy scripts for activating / deactivating playback to ~/scripts
 cp /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/playback_true.sh /home/minknow/scripts/
 cp /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/playback_FALSE.sh /home/minknow/scripts/
 
@@ -63,6 +68,9 @@ mv AllIDATv2_20210804.xlsx /applications/reference_data/reference_annotations
 mv 20210721_EpiDiP_anno.xlsx /applications/reference_data/reference_annotations
 
 chmod a=r /applications/reference_data/reference_annotations/*
+
+
+#reference data for copy number
 
 
 #wget https://docs.google.com/spreadsheets/d/1svy9s3noE8-rBxri_mU7OOWEw7MTrNDw/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true

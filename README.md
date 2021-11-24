@@ -114,9 +114,7 @@ After the completion of this scipt you should see something like the following:
 |    0   N/A  N/A      4644      C   ...bin/guppy_basecall_server     3927MiB |
 +-----------------------------------------------------------------------------+
 
-
-# After 3rd reboot
-activate and use vnc server (see above)
+You have to see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of memory on the GPU.
 
 ## Minknow UI
 * Ensure no Minion Unit is connected to the control PC.
@@ -133,6 +131,7 @@ After starting the Minknow User Interface, you should see something similar to t
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
 Your setup should be now ready for sequencing.
+Please verify this by a short test sequencing rung with an old flow cell.
 
 ##Reference data:
 NanoDip will not work without reference data.
@@ -150,7 +149,7 @@ https://docs.google.com/spreadsheets/d/1qSNZKaQxYbvBvGg1mZgRas7IqmmGNxBI/edit?us
 https://docs.google.com/spreadsheets/d/1UcPHsbph9RoWKnGXSBPhFG35PEVbYscK/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
 https://docs.google.com/spreadsheets/d/1A50bFWUBPBgO00AHYYfaE8H3iTZrGKNo/edit?usp=sharing&ouid=106878302393215457558&rtpof=true&sd=true
 
-Do *NOT* proceed before you have the following files in you Downlaods directory:
+Do *NOT* proceed before you have the following files in you Downloads directory:
 * GSE90496_IfP01.xlsx
 * GSE90496.xlsx
 * AllIDATv2_20210804.xlsx

@@ -3,6 +3,9 @@
 #
 #raw sequening example files to
 #installation of  nanodip dependencies
+
+#wirte current working directory to a variable
+curr_dir=`pwd`
 cd /applications
 
 git clone https://github.com/neuropathbasel/nanodip_dependencies.git

@@ -90,10 +90,10 @@ sudo chown minknow /data/nanodip_reports
 sudo mkdir -p /data/nanodip_output
 sudo chown minknow /data/nanodip_output
 
-echo $PW_minknow|sudo systemctl daemon-reload
-echo $PW_minknow|sudo service guppyd start
+#echo $PW_minknow|sudo systemctl daemon-reload
+#echo $PW_minknow|sudo service guppyd start
 
-#test if nvidia-smi is still working
+#test if guppy is running in GPU mode
 nvidia-smi
 
 echo "please remove any USB dvice from the PC"
