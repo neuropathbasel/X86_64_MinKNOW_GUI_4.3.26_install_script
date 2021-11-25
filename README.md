@@ -11,7 +11,7 @@ before getting started, please refresh this page to work with the latest version
 * Knowledge of Linux command line and VNC.
 * PC equipped with GPU (>= 8GB RAM) and *one* SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
 * Ubuntu 18.04 installed on the above mentioned PC with only *one user* called *minknow*.
-* Minion unit. The Unit *must not be connected*  to the PC while the scripts detailed below are executed.
+* Minion unit. The Unit *must not be connected*  to the PC while the first two scripts detailed below are executed. You will be asked to connect the Minion Unit.
 * *second* computer for VNC access to the control PC.  
 * Relevant debian packages (have to be requested form ONT)
   * minion-nc_21.06.10-1~bionic_all.deb
@@ -54,7 +54,7 @@ Run the following commands
 
 Verify requests for updates and downloads of additional spaces and usage of storage space by pressing y, define VNC password for user minknow in the respective dialogues.
 
-Please note:  For unclear reasons firefox crashes during the system updates. This does (so far) not impair this procedure.
+Please note:  For unclear reasons firefox crashes during the system updates. However, this does (so far) not impair this procedure.
 
 Upon completion, you be asked for verification of a reboot.
 
@@ -84,7 +84,7 @@ e.g. on a second linux machine enter:
 
 The desktop of the control PC should be shown.
 
-## copy debian files defined above to /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
+*copy debian files defined above to /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory*
 
 In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run
 
@@ -93,11 +93,11 @@ In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directo
 Verify installation of additional packages.
 If necessary, exit minknow service status dialogue by pressing “q”.
 
-After the completion of this scipt you should see something like the following:
+After the completion of this script you should see something like the following:
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/cuda_on_guppy.png)
 
-You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU.
+You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU memory.
 
 ## Minknow UI
 * Ensure no Minion Unit is connected to the control PC.
@@ -118,21 +118,21 @@ Please verify this by starting a short test sequencing run with an old flow cell
 
 # Reference data:
 NanoDip will not work without reference data.
-Chromium should be your default browser.
 
 Please use Chromium to obtain reference data (app 80 GB) from:
 https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
-*There are chances you will have to resume the file transfers*
 *After the creation of  a zip file, please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.*
 
 Do *NOT* proceed before you have completed the download of all 28 zip files.
 
-After completion, run
-/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.
+After completion, run in the terminal
 
-# Starting  NanoDip UI
+`/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.`
+
+# Starting  NanoDip UI in Jupyter Notebook for testing the installation and configuration
+
 Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
 
 Please run:
@@ -141,12 +141,12 @@ Please run:
 
 Chromium should start and display the following page:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage_crop.png)
 
 Double click NanoDiP_allinOne.ipyb.
 
-In Chromium you will see (with out the red circle):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
+In Chromium you will see (with out the additional circles):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_numbers.png)
 
 Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http:localhost:8080.
 
