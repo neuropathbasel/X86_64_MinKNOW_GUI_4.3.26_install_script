@@ -116,7 +116,7 @@ After starting the Minknow User Interface, you should see something similar to t
 Your setup should be now ready for sequencing.
 Please verify this by starting a short test sequencing run with an old flow cell in the Minknow UI.
 
-## Reference data:
+# Reference data:
 NanoDip will not work without reference data.
 Chromium should be your default browser.
 
@@ -124,8 +124,8 @@ Please use Chromium to obtain reference data (app 80 GB) from:
 https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
-## There are chances you will have to resume the file transfers
-## After the endless creation of  a zip file please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.
+*There are chances you will have to resume the file transfers*
+*After the creation of  a zip file, please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.*
 
 Do *NOT* proceed before you have completed the download of all 28 zip files.
 
@@ -135,10 +135,66 @@ After completion, run
 # Starting  NanoDip UI
 Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
 
-Please run
+Please run:
 
 '/home/minknow/scripts/activate_nanodip_jupyter_notbook.sh'
 
 Chromium should start and display the following page:
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage.png)
+
+Double click NanoDiP_allinOne.ipyb.
+
+In Chromium you will see (with out the red circle):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
+
+Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http:localhost:8080.
+
+The next page you see will be similar to (without the red arrow):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.pngNanoDiP_start_page_arrow.png)
+
+# Verify the installation:
+## NanoDip starting of one test run
+With a Minion (containing a flow cell) connected to the USB3 port of the control PC,
+Select Start test run (above the red circle "1")
+A six minute test run should be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
+
+## Activate playback run.
+In the reference files you downloaded there is a "raw" fast 5. In very simple terms, the is a recording of all electric signals obtained during sequencing a human sample. *Upon activation of a playback run the  recorded signals are send form the Minion sequencing unit,  do no longer record any signals resulting from the seuquencing of your sample but those recorded in our lab.*
+
+## *Please deactivate the playback feature after the completion of following system test steps.*
+
+To activate the playback test feature, please close Minknow UI and run:
+
+`/home/minknow/scripts/playback_true.sh`
+
+Start Minknow again and in the nanodip UI start the next testrun. In playback mode you will see reads generated in Minknow.
+
+After successfull completion of the second test run, please start a run in playback mode (link above the blue 2) and coose the GSE90496.xls reference set:
+
+After this simulated test run was started, under Mk1b status you are advised to select:
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png).
+
+In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
+
+The number of the CPG has to increase over time. Otherwise the configuration of f5c is not correct.
+
+Next choose plot cnv (2 in above screen shot).
+
+At the beginning of the playback a raw copy number plot has to be shown.
+
+Select plot UMAP against GSE90496_ifP01 (#3 in above screenshot).
+
+After the simulated sequencing run reached app. 150 MB  it should be terminated by NanoDiP without any user intervention.
+
+You should obtain the following:
+
+
+Copy number plot:
+
+and UMAP plot.
+
+Upon completion, please deactivate the playback feature by running in the terminal:
+
+`/home/minknow/scripts/playback_FALSE.sh`.
