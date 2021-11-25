@@ -149,7 +149,7 @@ In Chromium you will see (with out the red circle):
 
 Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http//:localhost:8080.
 
-The next page you see will be similar to (without the red arrow):
+The next page you see will be similar to (without the red blue wircle containing numbers 1 and 2):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
 
 # Verify the installation:
