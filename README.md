@@ -140,7 +140,7 @@ Please run:
 
 Chromium should start and display the following page:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage_crop.png)
 
 Double click NanoDiP_allinOne.ipyb.
 
