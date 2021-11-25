@@ -134,7 +134,7 @@ After completion, run in the terminal
 # Starting  NanoDip UI in Jupyter Notebook for testing the installation and configuration
 Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
 
-Please run:
+In the terminal please run:
 
 '/home/minknow/scripts/activate_nanodip_jupyter_notbook.sh'
 
@@ -150,7 +150,7 @@ In Chromium you will see (with out the red circle):
 Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http:localhost:8080.
 
 The next page you see will be similar to (without the red arrow):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.pngNanoDiP_start_page_arrow.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_arrow.png)
 
 # Verify the installation:
 ## NanoDip starting of one test run
@@ -159,7 +159,9 @@ Select Start test run (above the red circle "1")
 A six minute test run should be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
 
 ## Activate playback run.
-In the reference files you downloaded there is a "raw" fast 5. In very simple terms, the is a recording of all electric signals obtained during sequencing a human sample. *Upon activation of a playback run the  recorded signals are send form the Minion sequencing unit,  do no longer record any signals resulting from the seuquencing of your sample but those recorded in our lab.*
+In the reference files you downloaded there is a "raw" fast 5. In very simple terms, the is a recording of all electric signals obtained during sequencing a human sample. Upon activation of a playback run, Simulation of a siquening run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for itnerpretation.
+
+*All Signals monitored in the setting do no longer reflect the sample you loaded in the flow cell*
 
 ## *Please deactivate the playback feature after the completion of following system test steps.*
 
@@ -167,9 +169,9 @@ To activate the playback test feature, please close Minknow UI and run:
 
 `/home/minknow/scripts/playback_true.sh`
 
-Start Minknow again and in the nanodip UI start the next testrun. In playback mode you will see reads generated in Minknow.
+Start Minknow again and in the NanoDiP UI start the next testrun. In playback mode you will see reads generated in Minknow.
 
-After successfull completion of the second test run, please start a run in playback mode (link above the blue 2) and coose the GSE90496.xls reference set:
+After successful completion of the second test run, please start a run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
 
 After this simulated test run was started, under Mk1b status you are advised to select:
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png).
