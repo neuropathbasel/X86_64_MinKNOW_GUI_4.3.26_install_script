@@ -177,11 +177,11 @@ In the reference files you downloaded there is a "raw" fast 5. In very simple te
 
 ## *Please deactivate the playback feature after the completion of following system test steps.*
 
-To activate the playback test feature, please close Minknow UI and run:
+To activate the playback test feature, please close Minknow UI and run in the /home/minknow/scripts/ directory:
 
-`/home/minknow/scripts/playback_true.sh`
+`playback_true.sh`
 
-Start Minknow again and in the NanoDiP UI start the next testrun. In playback mode you will see reads generated in Minknow.
+Start Minknow again and in the NanoDiP UI (in Chromium) start the next testrun. In playback mode you will see reads generated in Minknow.
 
 After successful completion of the second test run, please start a run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
 
@@ -191,9 +191,9 @@ After this simulated test run was started, under Mk1b status you are advised to 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
 
-The number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
+A new tab will open and the number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
 
-Next choose plot cnv (#2 in above screen shot).
+Next choose plot cnv (#2 in above screen shot).Next Tab will open.
 
 At the beginning of the playback a raw copy number plot has to be shown.
 
@@ -204,11 +204,12 @@ After the simulated sequencing run reached app. 150 MB  it should be terminated 
 # You should obtain in the suggested playback run the following plots:
 
 ## Copy number plot:
-In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
+
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021_11_25_cnv_plot_run_completed.png)
 
-and
-cp
+and choose cp
+
+
 ## UMAP plot.
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
