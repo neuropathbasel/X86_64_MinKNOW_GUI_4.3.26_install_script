@@ -147,15 +147,15 @@ Double click NanoDiP_allinOne.ipyb.
 In Chromium you will see (with out the red circle):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
 
-Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http:localhost:8080.
+Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http//:localhost:8080.
 
 The next page you see will be similar to (without the red arrow):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_arrow.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
 
 # Verify the installation:
 ## NanoDip starting of one test run
 With a Minion (containing a flow cell) connected to the USB3 port of the control PC,
-Select Start test run (above the red circle "1")
+Select Start test run (above the red arrow)
 A six minute test run should be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
 
 ## Activate playback run.
