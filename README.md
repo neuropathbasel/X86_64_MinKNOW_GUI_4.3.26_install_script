@@ -132,7 +132,6 @@ After completion, run in the terminal
 `/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.`
 
 # Starting  NanoDip UI in Jupyter Notebook for testing the installation and configuration
-
 Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
 
 Please run:
@@ -141,12 +140,12 @@ Please run:
 
 Chromium should start and display the following page:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage_crop.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage.png)
 
 Double click NanoDiP_allinOne.ipyb.
 
-In Chromium you will see (with out the additional circles):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_numbers.png)
+In Chromium you will see (with out the red circle):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
 
 Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http:localhost:8080.
 
