@@ -188,6 +188,10 @@ After successful completion of the second test run, please start a run in playba
 After this simulated test run was started, under Mk1b status you are advised to select:
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png).
 
+This will activate an automatic termination when more than 150 GB have been sequenced. Currently this is the threshold needed for a meaning full classification of tumour subtypes.
+
+
+
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
 
