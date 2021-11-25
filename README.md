@@ -4,7 +4,7 @@ Scripted installation of Minknow control software version 4.3.26, nvidia GPU dri
 
 The following series of steps was found to work with more than three different PCs of different vendors.
 
-##this is work in progress
+## this is work in progress
 before getting started, please refresh this page to work with the latest version.
 
 ## Prerequisite
@@ -109,30 +109,42 @@ After starting the Minknow User Interface, you should see something similar to t
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_start_screen.png)
 
-## After connecting the Minion unit with a flow cell inserted you should see something like:
+*After connecting the Minion unit with a flow cell inserted you should see something like:*
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
 Your setup should be now ready for sequencing.
 Please verify this by starting a short test sequencing run with an old flow cell in the Minknow UI.
 
+#NanoDiP
+ After a successful hardware check.
+ In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run in the terminal
+ ./`c_nanodip_and_dependencies.sh`
+
+ For compatibility reasons most of the programs used in the NanoDiP pipeline have to be compiled from source, this step will take some time.
+
 # Reference data:
-NanoDip will not work without reference data.
+NanoDiP will not work without reference data.
+
+## Download of reference data
 
 Please use Chromium to obtain reference data (app 80 GB) from:
 https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
+
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
 *After the creation of  a zip file, please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.*
 
 Do *NOT* proceed before you have completed the download of all 28 zip files.
 
-After completion, run in the terminal
+## Script for moving the reference data to the correct folders
+
+After completion of the download, run in the terminal
 
 `/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.`
 
 # Starting  NanoDip UI in Jupyter Notebook for testing the installation and configuration
-Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
+For testing the configuration you can launch NanoDiP from Jupyter Notebook. Further possibilities to start NanoDiP will be given below.
 
 In the terminal please run:
 
@@ -147,7 +159,7 @@ Double click NanoDiP_allinOne.ipyb.
 In Chromium you will see (with out the red circle):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
 
-Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http//:localhost:8080.
+Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) and enter http//:localhost:8080.
 
 The next page you see will be similar to (without the red and blue circles containing numbers 1 and 2):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
@@ -181,7 +193,7 @@ In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 
 The number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
 
-Next choose plot cnv (2 in above screen shot).
+Next choose plot cnv (#2 in above screen shot).
 
 At the beginning of the playback a raw copy number plot has to be shown.
 
@@ -189,17 +201,33 @@ Select plot UMAP against GSE90496_ifP01 (#3 in above screenshot).
 
 After the simulated sequencing run reached app. 150 MB  it should be terminated by NanoDiP without any user intervention.
 
-You should obtain the following:
+# You should obtain in the suggested playback run the following plots:
 
-
-Copy number plot:
+## Copy number plot:
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021_11_25_cnv_plot_run_completed.png)
 
-and UMAP plot.
+and
+cp
+## UMAP plot.
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
 
-Upon completion, please deactivate the playback feature by running in the terminal:
+# Upon completion, please deactivate the playback feature by running in the terminal:
 
-`/home/minknow/scripts/playback_FALSE.sh`.
+`/home/minknow/scripts/playback_FALSE.sh`
+
+In case of any error messages or deviations from above description, please contact us.
+
+# Routine operation of NanoDiP
+
+After successful completion of the tests described above, please
+start NanoDiP  by entering in the terminal:
+
+ `/home/minknow/scripts/activate_nandip_python.sh`
+
+feature for or double click the symbolic link to the on the desktop will be implemented soon.
+
+# Pending:
+
+ symbolic links on Desktop / correction of symbolic link (Jupyter notebooks works, pyhton not yet)
