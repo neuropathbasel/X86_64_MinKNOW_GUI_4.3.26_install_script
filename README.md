@@ -149,7 +149,7 @@ In Chromium you will see (with out the red circle):
 
 Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) ansd enter http//:localhost:8080.
 
-The next page you see will be similar to (without the red blue wircle containing numbers 1 and 2):
+The next page you see will be similar to (without the red and blue circles containing numbers 1 and 2):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
 
 # Verify the installation:
@@ -159,9 +159,9 @@ Select Start test run (above the red arrow)
 A six minute test run should be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
 
 ## Activate playback run.
-In the reference files you downloaded there is a "raw" fast 5. In very simple terms, the is a recording of all electric signals obtained during sequencing a human sample. Upon activation of a playback run, Simulation of a siquening run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for itnerpretation.
+In the reference files you downloaded there is a "raw" fast 5. In very simple terms, this is a recording of all electric signals obtained during sequencing a human sample in our lab. Upon activation of a playback run, simulation of a sequencing run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for verification of the setup.Playback runs can be used for other test purposes as well.
 
-*All Signals monitored in the setting do no longer reflect the sample you loaded in the flow cell*
+*All Signals monitored in the setting do not reflect the sample you loaded in the flow cell*. During the test phase, do not load you flow cell with relevant samples.
 
 ## *Please deactivate the playback feature after the completion of following system test steps.*
 
@@ -179,7 +179,7 @@ After this simulated test run was started, under Mk1b status you are advised to 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
 
-The number of the CPG has to increase over time. Otherwise the configuration of f5c is not correct.
+The number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
 
 Next choose plot cnv (2 in above screen shot).
 
@@ -193,8 +193,12 @@ You should obtain the following:
 
 
 Copy number plot:
+In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021_11_25_cnv_plot_run_completed.png)
 
 and UMAP plot.
+
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
 
 Upon completion, please deactivate the playback feature by running in the terminal:
 
