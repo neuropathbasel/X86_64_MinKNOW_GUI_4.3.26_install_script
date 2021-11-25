@@ -88,7 +88,7 @@ The desktop of the control PC should be shown.
 
 In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run
 
-`.b_minknow_guppy_install_deb.sh`
+`./b_minknow_guppy_install_deb.sh`
 
 Verify installation of additional packages.
 If necessary, exit minknow service status dialogue by pressing “q”.
@@ -114,9 +114,9 @@ After starting the Minknow User Interface, you should see something similar to t
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
 Your setup should be now ready for sequencing.
-Please verify this by a short test sequencing rung with an old flow cell.
+Please verify this by starting a short test sequencing run with an old flow cell in the Minknow UI.
 
-##Reference data:
+## Reference data:
 NanoDip will not work without reference data.
 Chromium should be your default browser.
 
@@ -124,9 +124,21 @@ Please use Chromium to obtain reference data (app 80 GB) from:
 https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
-#there are chances you will have to resume the file transfers
+## There are chances you will have to resume the file transfers
+## After the endless creation of  a zip file please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.
 
 Do *NOT* proceed before you have completed the download of all 28 zip files.
 
 After completion, run
-/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh
+/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.
+
+# Starting  NanoDip UI
+Currently you can launch NanoiDip from Jupyter Notebook. Further possibilities to start the code shall be provided in due time.
+
+Please run
+
+'/home/minknow/scripts/activate_nanodip_jupyter_notbook.sh'
+
+Chromium should start and display the following page:
+
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage.png)

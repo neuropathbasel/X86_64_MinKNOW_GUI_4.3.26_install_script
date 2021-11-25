@@ -23,7 +23,7 @@ while true; do
 done
 
 echo "continuation of script"
-cd /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script
+cd /home/minknow/Downloads
 
 #unpacking of the zip archives of the reference data
 #existing files are overwritten in case some archives have been downloaded more than once
