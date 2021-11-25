@@ -207,16 +207,16 @@ After the simulated sequencing run reached app. 150 MB  it should be terminated 
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021_11_25_cnv_plot_run_completed.png)
 
-and choose cp
-
+Please verify that you can create a pdf report.
 
 ## UMAP plot.
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
 
 # Upon completion, please deactivate the playback feature by running in the terminal:
+ in the /home/minknow/scripts/ dirctory:
 
-`/home/minknow/scripts/playback_FALSE.sh`
+`./playback_FALSE.sh`
 
 In case of any error messages or deviations from above description, please contact us.
 
@@ -227,8 +227,9 @@ start NanoDiP  by entering in the terminal:
 
  `/home/minknow/scripts/activate_nandip_python.sh`
 
-feature for or double click the symbolic link to the on the desktop will be implemented soon.
+
 
 # Pending:
 
  symbolic links on Desktop / correction of symbolic link (Jupyter notebooks works, pyhton not yet)
+(feature for double click the symbolic link to the on the desktop will be implemented soon.)
