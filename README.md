@@ -119,7 +119,7 @@ Please verify this by starting a short test sequencing run with an old flow cell
 #NanoDiP
  After a successful hardware check.
  In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run in the terminal
- ./`c_nanodip_and_dependencies.sh`
+ `./c_nanodip_and_dependencies.sh`
 
  For compatibility reasons most of the programs used in the NanoDiP pipeline have to be compiled from source, this step will take some time.
 
@@ -191,13 +191,12 @@ After this simulated test run was started, under Mk1b status you are advised to 
 This will activate an automatic termination when more than 150 GB have been sequenced. Currently this is the threshold needed for a meaning full classification of tumour subtypes.
 
 
-
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
 
 A new tab will open and the number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
 
-Next choose plot cnv (#2 in above screen shot).Next Tab will open.
+After obtaining the first CPGs, choose plot cnv (#2 in above screen shot). Next Tab will open.
 
 At the beginning of the playback a raw copy number plot has to be shown.
 
