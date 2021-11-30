@@ -119,6 +119,7 @@ Please verify this by starting a short test sequencing run with an old flow cell
 #NanoDiP
  After a successful hardware check.
  In the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory run in the terminal
+
  `./c_nanodip_and_dependencies.sh`
 
  For compatibility reasons most of the programs used in the NanoDiP pipeline have to be compiled from source, this step will take some time.
@@ -148,7 +149,9 @@ For testing the configuration you can launch NanoDiP from Jupyter Notebook. Furt
 
 In the terminal please run:
 
-'/home/minknow/scripts/activate_nanodip_jupyter_notbook.sh'
+`cd ~/scripts`
+
+`./activate_nanodip_jupyter_notbook.sh`
 
 Chromium should start and display the following page:
 
@@ -167,11 +170,11 @@ The next page you see will be similar to (without the red and blue circles conta
 # Verify the installation:
 ## NanoDip starting of one test run
 With a Minion (containing a flow cell) connected to the USB3 port of the control PC,
-Select Start test run (above the red arrow)
-A six minute test run should be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
+Select Start test run (above the red circle "1").
+A six minute test run (with a total run time of app. 11 minutes) will be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
 
 ## Activate playback run.
-In the reference files you downloaded there is a "raw" fast 5. In very simple terms, this is a recording of all electric signals obtained during sequencing a human sample in our lab. Upon activation of a playback run, simulation of a sequencing run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for verification of the setup.Playback runs can be used for other test purposes as well.
+In the reference files you downloaded there is a "raw" fast 5. In very simple terms, this is a recording of all electric signals obtained during sequencing a human sample in our lab. Upon activation of a playback run, simulation of this "old" sequencing run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for verification of the setup.Playback runs can be used for other test purposes as well.
 
 *All Signals monitored in the setting do not reflect the sample you loaded in the flow cell*. During the test phase, do not load you flow cell with relevant samples.
 
@@ -179,16 +182,16 @@ In the reference files you downloaded there is a "raw" fast 5. In very simple te
 
 To activate the playback test feature, please close Minknow UI and run in the /home/minknow/scripts/ directory:
 
-`playback_true.sh`
+`./playback_true.sh`
 
 Start Minknow again and in the NanoDiP UI (in Chromium) start the next testrun. In playback mode you will see reads generated in Minknow.
 
-After successful completion of the second test run, please start a run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
+After successful completion of the second test run, please start a simulated run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
 
 After this simulated test run was started, under Mk1b status you are advised to select:
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png).
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png)
 
-This will activate an automatic termination when more than 150 GB have been sequenced. Currently this is the threshold needed for a meaning full classification of tumour subtypes.
+This will activate an automatic termination of the simulated sequencing run when more than 150 GB have been sequenced. Currently this is the threshold needed for a meaning full classification of tumour subtypes.
 
 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
@@ -217,7 +220,7 @@ Please verify that you can create a pdf report.
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
 
 # Upon completion, please deactivate the playback feature by running in the terminal:
- in the /home/minknow/scripts/ dirctory:
+ in the /home/minknow/scripts/ dirctory run:
 
 `./playback_FALSE.sh`
 
@@ -228,11 +231,12 @@ In case of any error messages or deviations from above description, please conta
 After successful completion of the tests described above, please
 start NanoDiP  by entering in the terminal:
 
- `/home/minknow/scripts/activate_nandip_python.sh`
+`cd /home/minknow/scripts`
 
+and
 
+ `./activate_nandip_python.sh`
 
-# Pending:
+ or double click the link on the desktop.
 
- symbolic links on Desktop / correction of symbolic link (Jupyter notebooks works, pyhton not yet)
-(feature for double click the symbolic link to the on the desktop will be implemented soon.)
+In both cases you will obtain the NanoDip UI in chromium with the features described above.
