@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=NanoDiP
+Exec=xfce4-terminal -e /home/minknow/scripts/activate_nandip_python.sh -T "do not Close - or you you will terminate NanoDiP as well"
+Icon=/applications/nanodip/EpiDiP_Logo_01.png
+Terminal=true
+Type=Application
+Categories=Application
+StartupNotify=true

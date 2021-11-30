@@ -237,6 +237,6 @@ and
 
  `./activate_nandip_python.sh`
 
- or double click the link on the desktop.
+ or double click the NanoDip link on the desktop..
 
-In both cases you will obtain the NanoDip UI in chromium with the features described above.
+In both cases chromium will start. Please press "F5" or refresh. You will see the NanoDip UI in chromium with the features described above.

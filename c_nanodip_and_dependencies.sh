@@ -44,7 +44,11 @@ chmod +x ~/scripts/activate_nandip_python.sh
 cp $curr_dir/activate_nanodip_jupyter_notebook.sh ~/scripts/
 chmod +x ~/scripts/activate_nanodip_jupyter_notebook.sh
 
-ln -s ~/scripts/activate_nandip_python.sh ~/Desktop/
+#create desktop ikon for starting NanoDip in Chromium
+cp $curr_dir/add_config_files/NanoDip.desktop /home/minknow/Desktop
+chmod +x /home/minknow/Desktop/NanoDip.desktop
+
+#ln -s ~/scripts/activate_nandip_python.sh ~/Desktop/
 #ln -s ~/scripts/activate_nanodip_jupyter_notebook.sh ~/Desktop/
 
 #scirpts and files for activating / dectivating playbackmode with known reference for GBM
