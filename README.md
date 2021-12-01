@@ -251,7 +251,7 @@ In both cases chromium will start. Please press "F5" or refresh. You will see th
 
 # In case any test above should fail
 
-In a first attempt, please, re-run in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
+## In a first attempt, please, re-run in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
 
 `./c_nanodip_and_dependencies.sh`
 
