@@ -197,6 +197,7 @@ After this simulated test run was started, under Mk1b status you are advised to 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/terminate_run_150_MB_box.png)
 
 This will activate an automatic termination program in a new browser tab. Upon reaching 150 megabases of simulated sequencing, the termination program will stop the sequencing procedure. Basecalling will continue unless already completed. 150 megabases have empirically been determined to be sufficient for tumor classification.
+
 While the sequencing procedure is running and after the run terminator has been launched, navigate to the Analyze selection, then single-click: get_CpGs (1 in below screenshot):
 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
