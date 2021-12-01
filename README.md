@@ -194,8 +194,6 @@ After successful completion of the second test run, please start a simulated run
 
 After this simulated test run was started, under Mk1b status you are advised to single-click:
 
-second picture
-
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/terminate_run_150_MB_box.png)
 
 This will activate an automatic termination program in a new browser tab. Upon reaching 150 megabases of simulated sequencing, the termination program will stop the sequencing procedure. Basecalling will continue unless already completed. 150 megabases have empirically been determined to be sufficient for tumor classification.
