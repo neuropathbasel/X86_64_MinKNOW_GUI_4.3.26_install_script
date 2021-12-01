@@ -190,7 +190,7 @@ To activate the playback test feature, please close MinKNOW UI and run in the /h
 
 Start MinKNOW again and in the NanoDiP UI (in Chromium) start the next testrun. In playback mode you will see reads generated in Minknow.
 
-After successful completion of the second test run, please start a simulated run in playback mode (link above the blue 2) and choose the AllIDatv2_20200804.xls reference set:
+After successful completion of the second test run, please start a simulated run in playback mode (link above the blue 2), enter on the next page the sample name and choose in addition the AllIDatv2_20200804.xls as reference set from the drop down menue.
 
 After this simulated test run was started, under Mk1b status you are advised to single-click:
 
