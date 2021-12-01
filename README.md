@@ -225,7 +225,7 @@ Please verify that you can create a pdf report.
 
 ## UMAP plot.
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021-11-25_16-20-39_UMAP_ifp_references.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021-12-01_14-10-25_UMAP_ifp_references.png)
 
 #place correct  scrrenshot#
 
