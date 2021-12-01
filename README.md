@@ -219,7 +219,7 @@ After the simulated sequencing run reached app. 150 MB  it should be terminated 
 
 ## Copy number plot:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021_11_25_cnv_plot_run_completed.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021_11_30_cnv_plot_run_completed.png)
 
 Please verify that you can create a pdf report.
 
