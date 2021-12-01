@@ -95,7 +95,7 @@ If necessary, exit minknow service status dialogue by pressing “q”.
 
 After the completion of this script you should see something like the following:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/cuda_on_guppy.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/cuda_on_guppy.png)
 
 You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU memory.
 
@@ -107,11 +107,11 @@ You should see an entry in the second but last line, indicating that .../bin/gup
 
 After starting the MinKNOW User Interface, you should see something similar to the following image
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_start_screen.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/Minknow_UI_start_screen.png)
 
 *After connecting the MinION unit with a flow cell inserted you should see something like:*
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/Minknow_UI_Minion_w_FC.png)
 
 Your setup should be now ready for sequencing.
 Please verify this by starting a short test sequencing run with an old flow cell in the Minknow UI.
@@ -159,17 +159,17 @@ In the terminal please run:
 
 Chromium should start and display the following page:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage_crop.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/nanodip_Jupyter_startpage_crop.png)
 
 Single click NanoDiP_allinOne.ipyb.
 
 In Chromium you will see (with-out the red circle):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/NanoDiP_startpage_in_Jupyter.png)
 
 Please double click the triangle icon within the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) and enter http//:localhost:8080.
 
 The next page you see will be similar to (without the red and blue circles containing numbers 1 and 2):
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/NanoDiP_start_page_numbers.png)
 
 # Verify the installation:
 ## NanoDip starting of one test run
@@ -193,7 +193,6 @@ Start MinKNOW again and in the NanoDiP UI (in Chromium) start the next testrun. 
 After successful completion of the second test run, please start a simulated run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
 
 After this simulated test run was started, under Mk1b status you are advised to single-click:
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png)
 
 second picture
 
@@ -204,7 +203,7 @@ While the sequencing procedure is running and after the run terminator has been 
 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/Analyze_dialogue.png)
 
 Another new tab will open and the number o analyzed fast5 files that have been screened for diagnostically relevant CpG (methylation) sites should increase over time. Each fast5 file will contain 400 reads and analysis takes about 30 seconds per file. If many thousands of reads have been collected and the file counter does not increase, methylation calling (depening on guppy, minimap2, samtools, f5c, and R) does not work correctly.
 
@@ -220,13 +219,13 @@ After the simulated sequencing run reached app. 150 MB  it should be terminated 
 
 ## Copy number plot:
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021_11_25_cnv_plot_run_completed.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021_11_25_cnv_plot_run_completed.png)
 
 Please verify that you can create a pdf report.
 
 ## UMAP plot.
 
-![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
+![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021-11-25_16-20-39_UMAP_ifp_references.png)
 
 #place correct  scrrenshot#
 
