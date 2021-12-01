@@ -5,7 +5,7 @@ Scripted installation of Minknow control software version 4.3.26, nvidia GPU dri
 The following series of steps was found to work with more than three different PCs of different vendors.
 
 ## this is work in progress
-before getting started, please refresh this page to work with the latest version.
+Before getting started, please refresh this page to work with the latest version.
 
 ## Prerequisite
 * Knowledge of Linux command line and VNC.
@@ -56,13 +56,13 @@ Verify requests for updates and downloads of additional spaces and usage of stor
 
 Please note:  For unclear reasons firefox crashes during the system updates. However, this does (so far) not impair this procedure.
 
-Upon completion, you be asked for verification of a reboot.
+Upon completion, you will be asked for verification of a reboot.
 
 Make sure there is *no* Minion unit connected to the PC. A connected Minion device can impair system startup.
 
 # After reboot
 
-Only command line login is shown on the screen attached to the control PC.
+Only command line login prompt is shown on the screen attached to the control PC.
 
 # start and use vnc server
 ## ssh login to the control PC
@@ -100,16 +100,16 @@ After the completion of this script you should see something like the following:
 You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU memory.
 
 ## Minknow UI
-* Ensure no Minion Unit is connected to the control PC.
-* Start Minknow UI from the start menu (upper left corner with little mouse head; enter 'minknow').
+* Ensure no MinION Unit is connected to the control PC.
+* Start MinKNOW UI from the start menu (upper left corner with little mouse head; enter 'minknow').
 * Login with your Nanopore account or as a guest. In the next dialogue box “update available”, *skip this version*. If there is no response to any mouse click and there is a dialogue for tutorials, choose in the upper right corner: ship all tutorials by clicking three vertical dots and then skip tutorials (or something similar).
-* For the time being, please, *never ever* choose update of minknow. Any update will prevent all scripts developed for our nanodip pipeline from proper execution and you will not obtain any useful results.
+* For the time being, please, *never ever* choose to update of MinKNOW. Any update will prevent all scripts developed for our nanodip pipeline from proper execution and you will not obtain any useful results. It will be hard or impossible to revert to the state before applying an update.
 
-After starting the Minknow User Interface, you should see something similar to the following image
+After starting the MinKNOW User Interface, you should see something similar to the following image
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_start_screen.png)
 
-*After connecting the Minion unit with a flow cell inserted you should see something like:*
+*After connecting the MinION unit with a flow cell inserted you should see something like:*
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Minknow_UI_Minion_w_FC.png)
 
@@ -129,20 +129,24 @@ NanoDiP will not work without reference data.
 
 ## Download of reference data
 
-Please use Chromium to obtain reference data (app 80 GB) from:
+Please use Chromium to obtain reference data (approx. 80 GB) from:
 https://drive.google.com/drive/folders/11DnOE7ET3MmbQ9q8HbXoqvSZqgjSI-NZ?usp=sharing
 
 Please download the reference data as multiple zip files to the /home/minknow/Downloads directory
 
 *After the creation of  a zip file, please do allow the determination of your location by chromium/ google. Otherwise the download will not start at all and you will have to resume it.*
 
-Do *NOT* proceed before you have completed the download of all 28 zip files.
+Do *NOT* proceed before you have completed the download of all (typically 28 zip) files.
+
+The google server will generate the zip files ad hoc for your particular download. This process will also take some time. Do not interrupt this process. Furthermore, you may be asked to allow downloading of multiple files simultaneously.
 
 ## Script for moving the reference data to the correct folders
 
 After completion of the download, run in the terminal
 
-`/home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script directory/d_reference_data.sh.`
+`cd /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script`
+
+`./d_reference_data.sh`
 
 # Starting  NanoDip UI in Jupyter Notebook for testing the installation and configuration
 For testing the configuration you can launch NanoDiP from Jupyter Notebook. Further possibilities to start NanoDiP will be given below.
@@ -157,57 +161,58 @@ Chromium should start and display the following page:
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/nanodip_Jupyter_startpage_crop.png)
 
-Double click NanoDiP_allinOne.ipyb.
+Single click NanoDiP_allinOne.ipyb.
 
-In Chromium you will see (with out the red circle):
+In Chromium you will see (with-out the red circle):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_startpage_in_Jupyter.png)
 
-Please double click the double arrow in the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) and enter http//:localhost:8080.
+Please double click the triangle icon within the red circle and the subsequent dialogue box "Restart and run all cells" and upon completion open a new tab (ctrl +T) and enter http//:localhost:8080.
 
 The next page you see will be similar to (without the red and blue circles containing numbers 1 and 2):
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/NanoDiP_start_page_numbers.png)
 
 # Verify the installation:
 ## NanoDip starting of one test run
-With a Minion (containing a flow cell) connected to the USB3 port of the control PC,
+With a MinION (containing an old, used flow cell) connected to the USB3 port of the control PC,
 Select Start test run (above the red circle "1").
-A six minute test run (with a total run time of app. 11 minutes) will be initiated. Depending on the age of your flow cell you could see read generated in MinKnow.
+A six minute test run (with a total run time of app. 11 minutes) will be initiated. Depending on the age of your flow cell you could see read generated in MinKNOW.
 
 ## Activate playback run.
-In the reference files you downloaded there is a "raw" fast 5. In very simple terms, this is a recording of all electric signals obtained during sequencing a human sample in our lab. Upon activation of a playback run, simulation of this "old" sequencing run is initiated. The  signals recorded in our lab for one selected sample are send form the Minion sequencing unit to the control PC for verification of the setup.Playback runs can be used for other test purposes as well.
+In the reference files you downloaded there is a "raw" fast-5. In very simple terms, this is a recording of all electric signals obtained during sequencing a human DNA in our lab. Upon activation of a playback run, a simulation based on this "old" sequencing run is initiated. The  signals recorded in our lab for one selected sample are simulated as if they came from the MinION sequencing unit attached to your control PC. The purpose of the playback run is the verification of the setup. Playback runs can be used for other test purposes as well, in particular for software development. Playback requires a physical MinION to be connected to your computer and a real flow cell to be inserted. The real flow cell ID will be used. Note that the temperature of the flow cell will not be adjusted and that it is 35 instead of 34 degrees C.
 
-*All Signals monitored in the setting do not reflect the sample you loaded in the flow cell*. During the test phase, do not load you flow cell with relevant samples.
+*Important: All signals  recorded in playback mode do not reflect the sample you potentially loaded in the flow cell*. During the test phase, do not load your flow cell with relevant samples and preferably use a flow cell at the end of its life.
 
 ## *Please deactivate the playback feature after the completion of following system test steps.*
 
-To activate the playback test feature, please close Minknow UI and run in the /home/minknow/scripts/ directory:
+To activate the playback test feature, please close MinKNOW UI and run in the /home/minknow/scripts/ directory:
 
 `./playback_true.sh`
 
-Start Minknow again and in the NanoDiP UI (in Chromium) start the next testrun. In playback mode you will see reads generated in Minknow.
+Start MinKNOW again and in the NanoDiP UI (in Chromium) start the next testrun. In playback mode you will see reads generated in Minknow.
 
 After successful completion of the second test run, please start a simulated run in playback mode (link above the blue 2) and choose the GSE90496.xls reference set:
 
-After this simulated test run was started, under Mk1b status you are advised to select:
+After this simulated test run was started, under Mk1b status you are advised to single-click:
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/terminate_run_150_MB_box.png)
 
-This will activate an automatic termination of the simulated sequencing run when more than 150 GB have been sequenced. Currently this is the threshold needed for a meaning full classification of tumour subtypes.
-
+This will activate an automatic termination program in a new browser tab. Upon reaching 150 megabases of simulated sequencing, the termination program will stop the sequencing procedure. Basecalling will continue unless already completed. 150 megabases have empirically been determined to be sufficient for tumor classification.
+While the sequencing procedure is running and after the run terminator has been launched, navigate to the Analyze selection, then single-click: get_CpGs (1 in below screenshot):
 
 In the Analyze selection, please choose: get_CpGs (1 in below screenshot):
+
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/Analyze_dialogue.png)
 
-A new tab will open and the number of the CPGs has to increase over time. Otherwise the configuration of f5c is not correct.
+Another new tab will open and the number o analyzed fast5 files that have been screened for diagnostically relevant CpG (methylation) sites should increase over time. Each fast5 file will contain 400 reads and analysis takes about 30 seconds per file. If many thousands of reads have been collected and the file counter does not increase, methylation calling (depening on guppy, minimap2, samtools, f5c, and R) does not work correctly.
 
-After obtaining the first CPGs, choose plot cnv (#2 in above screen shot). Next Tab will open.
+After obtaining the first completely "aligned and methylation called" fast-5 (i.e. counter increments), single-click  plot CMV (#2 in above screen shot). Again, a new tab will open.
 
-At the beginning of the playback a raw copy number plot has to be shown.
+After having obtained 3 or more "aligned and methylation called" fast5 files, a (coarse) copy number plot will appear. Re-loading of the tab will re-initiate CNV plotting. The more fast5 files, the longer the computation will take.
 
-Select plot UMAP against GSE90496_ifP01 (#3 in above screenshot).
+In order to analyze methylation data, single-clickSelect plot UMAP against AllIDATv2_20210804GSE90496_ifP01 (#3 in above screenshot). Depending on the amount of data "sequenced" so far by the simulation, the UMAP plot will show separate clusters for reference datasets and an arrow indicate the current run.
 
 After the simulated sequencing run reached app. 150 MB  it should be terminated by NanoDiP without any user intervention.
 
-# You should obtain in the suggested playback run the following plots:
+# You should obtain the following plots:
 
 ## Copy number plot:
 
@@ -218,6 +223,8 @@ Please verify that you can create a pdf report.
 ## UMAP plot.
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/2021-11-25_16-20-39_UMAP_ifp_references.png)
+
+#place correct  scrrenshot#
 
 # Upon completion, please deactivate the playback feature by running in the terminal:
  in the /home/minknow/scripts/ dirctory run:
@@ -239,4 +246,12 @@ and
 
  or double click the NanoDip Ikon/link on the desktop.
 
-In both cases chromium will start. Please press "F5" or refresh. You will see the NanoDip UI in chromium with the features described above.
+In both cases chromium will start. Please press "F5" or refresh. You will see the NanoDiP UI in chromium with the features described above.
+
+#In case any test above should fail
+
+In a fist rest, please, re-run in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
+
+`./c_nanodip_and_dependencies.sh`
+
+So far most of recent issues we have seen were fixed this way. Our current scripts can be impaired by network interruptions. If these interruptions are encountered during the download of additional system libraries, compilation errors may occur that will impair subsequent compilation of R (libraries) and f5c.
