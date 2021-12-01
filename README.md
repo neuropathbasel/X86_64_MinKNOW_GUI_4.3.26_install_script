@@ -255,4 +255,4 @@ In both cases chromium will start. Please press "F5" or refresh. You will see th
 
 `./c_nanodip_and_dependencies.sh`
 
-So far most of recent issues we have seen were fixed this way. Our current scripts can be impaired by network interruptions. If these interruptions are encountered during the download of additional system libraries, compilation errors may occur that will impair subsequent compilation of R, R libraries and f5c.
+So far most of recent issues we have seen were fixed this way. Our current scripts can be impaired by network interruptions. If these interruptions are encountered during the download of additional system libraries, compilation errors may occur that will impair subsequent compilation of R, R libraries or/ and f5c.
