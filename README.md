@@ -226,7 +226,6 @@ Please verify that you can create a pdf report.
 
 ![picture alt](https://github.com/neuropathbasel/X86_64_MinKNOW_GUI_4.3.26_install_script/blob/main/screenshots/2021-12-01_14-10-25_UMAP_ifp_references.png)
 
-#place correct  scrrenshot#
 
 # Upon completion, please deactivate the playback feature by running in the terminal:
  in the /home/minknow/scripts/ dirctory run:
@@ -250,10 +249,10 @@ and
 
 In both cases chromium will start. Please press "F5" or refresh. You will see the NanoDiP UI in chromium with the features described above.
 
-#In case any test above should fail
+# In case any test above should fail
 
-In a fist rest, please, re-run in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
+In a first attempt, please, re-run in the /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory
 
 `./c_nanodip_and_dependencies.sh`
 
-So far most of recent issues we have seen were fixed this way. Our current scripts can be impaired by network interruptions. If these interruptions are encountered during the download of additional system libraries, compilation errors may occur that will impair subsequent compilation of R (libraries) and f5c.
+So far most of recent issues we have seen were fixed this way. Our current scripts can be impaired by network interruptions. If these interruptions are encountered during the download of additional system libraries, compilation errors may occur that will impair subsequent compilation of R, R libraries and f5c.
