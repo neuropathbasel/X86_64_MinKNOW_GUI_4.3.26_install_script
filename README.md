@@ -99,6 +99,17 @@ After the completion of this script you should see something like the following:
 
 You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU memory.
 
+If step b fails and you are not seen teh nvidia-smi screen, please repeat `./a_gpu_cuda.sh` in the  /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory. Most likely you will see an key error.
+
+So far we did not find a scripted way to overcome this.
+
+To fix this issue, please follow the instructions of nvidia under:
+https://forums.developer.nvidia.com/t/gpg-error-http-developer-download-nvidia-com-compute-cuda-repos-ubuntu1804-x86-64/212904/3
+
+while deleting the problematic key you do seen in the error message.
+
+After this, please re-run the script given above.
+
 ## Minknow UI
 * Ensure no MinION Unit is connected to the control PC.
 * Start MinKNOW UI from the start menu (upper left corner with little mouse head; enter 'minknow').
