@@ -29,7 +29,8 @@ chmod +x ~/scripts/vnc_start.sh
 
 #installation of nvidia driver using nvidia mirror
 
-wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub | sudo apt-key add -
+#wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub | sudo apt-key add - # key is outdated
+wget -qO - https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/3bf863cc.pub | sudo apt-key add - #key was working Fr. 2022-08-05
 
 echo "#NVIDA" | sudo tee -a /etc/apt/sources.list
 echo "deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/ /" | sudo tee -a /etc/apt/sources.list
