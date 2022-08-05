@@ -99,7 +99,8 @@ After the completion of this script you should see something like the following:
 
 You should see an entry in the second but last line, indicating that .../bin/guppy_basecall_server is using more than 3.5 GB of GPU memory.
 
-If step b fails and you are not seen teh nvidia-smi screen, please repeat `./a_gpu_cuda.sh` in the  /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory. Most likely you will see an key error.
+## trouble shooting for step a and b 
+If step b fails and you are not seen the nvidia-smi screen, please repeat `./a_gpu_cuda.sh` in the  /home/minknow/Downloads/X86_64_MinKNOW_GUI_4.3.26_install_script/ directory. Most likely you will see an key error.
 
 So far we did not find a scripted way to overcome this.
 
