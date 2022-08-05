@@ -8,7 +8,7 @@ The following series of steps was found to work with more than three different P
 Before getting started, please refresh this page to work with the latest version.
 
 ## Prerequisite
-* Knowledge of Linux command line and VNC.
+* Knowledge of Linux command line and VNC(https://en.wikipedia.org/wiki/Virtual_Network_Computing).
 * PC equipped with GPU (>= 8GB RAM) and *one* SSD or HDD with at least 1 TB capacity, 1 USB3 port and access to the internet.
 * Ubuntu 18.04 installed on the above mentioned PC with only *one user* called *minknow*.
 * Minion unit. The Unit *must not be connected*  to the PC while the first two scripts detailed below are executed. You will be asked to connect the Minion Unit.
