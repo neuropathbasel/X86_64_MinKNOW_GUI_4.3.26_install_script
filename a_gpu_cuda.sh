@@ -41,7 +41,8 @@ sudo apt update -y
 sudo apt upgrade -y
 #should show
 #sudo apt install nvidia-driver-470 cuda
-sudo apt install cuda -y
+#sudo apt install cuda -y #2022-08-09 commented out
+sudo apt-get install cuda-runtime-11-6 #trial
 
 #set chromium as default browser
 #sudo update-alternatives --set x-www-browser /usr/bin/chromium-browser
