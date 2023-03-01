@@ -167,7 +167,7 @@ In the terminal please run:
 
 `cd ~/scripts`
 
-`./activate_nanodip_jupyter_notbook.sh`
+`./activate_nanodip_jupyter_notebook.sh`
 
 Chromium should start and display the following page:
 
